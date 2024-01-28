@@ -1,0 +1,110 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1116,819" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="608,618" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Starting Sequence" sap:VirtualizedContainerService.HintSize="546,507" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: BlueStacks App Player" sap:VirtualizedContainerService.HintSize="484,396" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d9afe43b-856d-46c5-a651-57f0d24337c1" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 1920, 1032" FilePath="C:\Program Files\BlueStacks_nxt\hd-player.exe" IconBase64="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" InformativeScreenshot="c6152cc69f3ed8041647769cd9bc5644.png" Selector="&lt;wnd app='hd-player.exe' cls='Qt*QWindowOwnDCIcon' title='BlueStacks App Player' /&gt;" Title="BlueStacks App Player" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
