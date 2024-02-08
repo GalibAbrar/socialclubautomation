@@ -2,6 +2,7 @@
   <x:Members>
     <x:Property Name="AdCounter" Type="InOutArgument(x:Int32)" />
   </x:Members>
+  <sap:VirtualizedContainerService.HintSize>1198,5460</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -109,16 +110,16 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_14">
+  <Sequence sap:VirtualizedContainerService.HintSize="1208,5395" sap2010:WorkflowViewState.IdRef="Sequence_14">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Starting Sequence" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Starting Sequence" sap:VirtualizedContainerService.HintSize="1146,5284" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -136,20 +137,20 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: BlueStacks App Player" sap:VirtualizedContainerService.HintSize="1084,4236" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d9afe43b-856d-46c5-a651-57f0d24337c1" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: BlueStacks App Player" sap:VirtualizedContainerService.HintSize="1084,5017" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d9afe43b-856d-46c5-a651-57f0d24337c1" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1050,3945" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1050,4726" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="988,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Bluestacks operation started successfully..&quot;]" />
-              <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="5a3cc431-b8ca-480e-a1cb-4ed17ff04c3d" DisplayName="CV Screen Scope 'BlueStacksApp'" sap:VirtualizedContainerService.HintSize="988,3647" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+              <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="5a3cc431-b8ca-480e-a1cb-4ed17ff04c3d" DisplayName="CV Screen Scope 'BlueStacksApp'" sap:VirtualizedContainerService.HintSize="988,4428" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                 <p:CVScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -381,16 +382,16 @@
                           </ui:Target>
                         </p:CvClickWithDescriptor.Target>
                       </p:CvClickWithDescriptor>
-                      <uix:NCheckState sap2010:Annotation.AnnotationText="Checks if we have entered the hosted Club. Starts looking for the Games tab that contains history of past games. &#xA;&#xA;Finally clicks and loads up the games lists." DisplayName="Check App State 'Games'" sap:VirtualizedContainerService.HintSize="954,169" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d9afe43b-856d-46c5-a651-57f0d24337c1" Version="V3">
+                      <uix:NCheckState sap2010:Annotation.AnnotationText="Checks if we have entered the hosted Club. Starts looking for the Games tab that contains history of past games. &#xA;&#xA;Finally clicks and loads up the games lists." DisplayName="Check App State 'Games'" sap:VirtualizedContainerService.HintSize="954,1286" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d9afe43b-856d-46c5-a651-57f0d24337c1" Version="V3">
                         <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,483" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,972" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Found games tab and will click to get list&quot;]" />
-                            <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Text 'Games' (193,112,58,16)&quot;]" DesignTimeCacheId="05ba93e9-a5a2-4766-a96e-8deb60f37e66" DesignTimeScaleFactor="1" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="388,185" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_3" InformativeScreenshot="dca7454fc48d69757db20a9fa26677fe" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                            <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" Descriptor="[&quot;Target: Text 'Games' (193,112,58,16)&quot;]" DesignTimeCacheId="05ba93e9-a5a2-4766-a96e-8deb60f37e66" DesignTimeScaleFactor="1" DisplayName="CV Click - Text" sap:VirtualizedContainerService.HintSize="388,185" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_3" InformativeScreenshot="dca7454fc48d69757db20a9fa26677fe" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                               <p:CvClickWithDescriptor.CursorPosition>
                                 <ui:CursorPosition Position="Center">
                                   <ui:CursorPosition.OffsetX>
@@ -419,6 +420,13 @@
                                 </ui:Target>
                               </p:CvClickWithDescriptor.Target>
                             </p:CvClickWithDescriptor>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Games are loaded and will start checking each game LIVE or Preparing status&quot;]" />
+                            <ui:Comment sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="Comment_1" Text="New invoke method. This method will start checking for &quot;Preparing&quot; and &quot;LIVE&quot; games and skip them, then it will count 10 games and collect data" />
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ScrollDown1Game.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ScrollDown1Game.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                              </ui:InvokeWorkflowFile.Arguments>
+                            </ui:InvokeWorkflowFile>
                           </Sequence>
                         </uix:NCheckState.IfExists>
                         <uix:NCheckState.IfNotExists>
@@ -438,13 +446,11 @@
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NCheckState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,143" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Games are loaded and will start checking each game LIVE or Preparing status&quot;]" />
-                      <ui:Comment sap:VirtualizedContainerService.HintSize="954,113" sap2010:WorkflowViewState.IdRef="Comment_1" Text="New invoke method. This method will start checking for &quot;Preparing&quot; and &quot;LIVE&quot; games and skip them, then it will count 10 games and collect data" />
                     </Sequence>
                   </ActivityAction>
                 </p:CVScope.Body>
