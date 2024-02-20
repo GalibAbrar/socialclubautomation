@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ScrollDown1Game" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1116,4951" sap2010:WorkflowViewState.IdRef="ScrollDown1Game_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ScrollDown1Game" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1116,5459</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ScrollDown1Game_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -43,6 +51,7 @@
       <x:String>UiPath.UIAutomationNext.Triggers</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
       <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -110,13 +119,13 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ScrollDown1Game" sap:VirtualizedContainerService.HintSize="682,4886" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ScrollDown1Game" sap:VirtualizedContainerService.HintSize="758,5394" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DisplayName="CV Screen Scope 'BlueStacksApp'" sap:VirtualizedContainerService.HintSize="620,4775" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DisplayName="CV Screen Scope 'BlueStacksApp'" sap:VirtualizedContainerService.HintSize="696,5283" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
       <p:CVScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -129,7 +138,7 @@
               <Variable x:TypeArguments="x:Int32" Name="ListTargetCount" />
               <Variable x:TypeArguments="x:Boolean" Name="BoolIncompleteGame" />
             </Sequence.Variables>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="586,116" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="662,116" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -143,7 +152,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Go to the bottom of all the previous games.&#xA;Now starts working it's way up." DisplayName="While" sap:VirtualizedContainerService.HintSize="586,1105" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_4">
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Go to the bottom of all the previous games.&#xA;Now starts working it's way up." Condition="[ScrollDownCount&lt;7]" DisplayName="While" sap:VirtualizedContainerService.HintSize="662,1105" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_4">
               <ui:InterruptibleWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,927" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -244,9 +253,6 @@
                   </Assign>
                 </Sequence>
               </ui:InterruptibleWhile.Body>
-              <ui:InterruptibleWhile.Condition>
-                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="ScrollDownCount&lt;7" />
-              </ui:InterruptibleWhile.Condition>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -255,8 +261,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InterruptibleWhile>
-            <ui:Comment sap:VirtualizedContainerService.HintSize="586,75" sap2010:WorkflowViewState.IdRef="Comment_3" Text="IMPORTANT: Need to set macro inside Bluestacks application" />
-            <p:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="False" sap2010:Annotation.AnnotationText="Kickstarts Bluestack's Macro&#xA;&#xA;CRUCIAL TO BE CONFIGURED IN TARGET MACHINE" ClickBeforeTyping="False" Descriptor="[&quot;Target: Button (126,932,306,60) OffsetPoint: (-3,-43)&quot; +&#xA;&quot;Anchor: Text 'Manage' (235,951,90,27)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Type Into - ScrollUpCustom" EmptyField="False" sap:VirtualizedContainerService.HintSize="586,242" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_3" InformativeScreenshot="4bfb494805218866ec7ef506d0e28f69" NumberOfScrolls="2" ScrollDirection="None" Text="[&quot;[d(Shift)][k(End)][u(Shift)]&quot;]" Version="V6">
+            <ui:Comment sap:VirtualizedContainerService.HintSize="662,75" sap2010:WorkflowViewState.IdRef="Comment_3" Text="IMPORTANT: Need to set macro inside Bluestacks application" />
+            <p:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="False" sap2010:Annotation.AnnotationText="Kickstarts Bluestack's Macro&#xA;&#xA;CRUCIAL TO BE CONFIGURED IN TARGET MACHINE" ClickBeforeTyping="False" Descriptor="[&quot;Target: Button (126,932,306,60) OffsetPoint: (-3,-43)&quot; +&#xA;&quot;Anchor: Text 'Manage' (235,951,90,27)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Type Into - ScrollUpCustom" EmptyField="False" sap:VirtualizedContainerService.HintSize="662,242" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_3" InformativeScreenshot="4bfb494805218866ec7ef506d0e28f69" NumberOfScrolls="2" ScrollDirection="None" Text="[&quot;[d(Shift)][k(End)][u(Shift)]&quot;]" Version="V6">
               <p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
                 <uc:CvDescriptor Id="0bfe47f9-987d-4eb6-8646-5795c2ed2115" TargetPointOffset="-3, -43">
                   <uc:CvDescriptor.Anchors>
@@ -287,8 +293,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p:CvTypeIntoWithDescriptor>
-            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="586,90" sap2010:WorkflowViewState.IdRef="Delay_5" />
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="586,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="662,90" sap2010:WorkflowViewState.IdRef="Delay_5" />
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="662,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -318,9 +324,9 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[ListCounting&lt;ListTargetCount]" DisplayName="While" sap:VirtualizedContainerService.HintSize="586,2388" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[ListCounting&lt;ListTargetCount]" DisplayName="While" sap:VirtualizedContainerService.HintSize="662,2771" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,2252" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,2635" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="CurrentGameState" />
                   </Sequence.Variables>
@@ -329,7 +335,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <p:CvGetTextWithDescriptor DelayScreenshotAfterScroll="{x:Null}" Descriptor="[&quot;Target: Button (29,110,147,47) Offset: (2,163,83,23)&quot; +&#xA;&quot;Anchor: Text 'Messages' (57,125,90,21)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Get Text - Button" sap:VirtualizedContainerService.HintSize="510,220" sap2010:WorkflowViewState.IdRef="CvGetTextWithDescriptor_2" InformativeScreenshot="24b99a8935158b7f0ee6debb4124ea80" NumberOfScrolls="2" RefreshBefore="True" Result="[CurrentGameState]" ScrollDirection="None" Version="V6">
+                  <p:CvGetTextWithDescriptor DelayScreenshotAfterScroll="{x:Null}" Descriptor="[&quot;Target: Button (29,110,147,47) Offset: (2,163,83,23)&quot; +&#xA;&quot;Anchor: Text 'Messages' (57,125,90,21)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Get Text - Button" sap:VirtualizedContainerService.HintSize="586,220" sap2010:WorkflowViewState.IdRef="CvGetTextWithDescriptor_2" InformativeScreenshot="24b99a8935158b7f0ee6debb4124ea80" NumberOfScrolls="2" RefreshBefore="True" Result="[CurrentGameState]" ScrollDirection="None" Version="V6">
                     <p:CvGetTextWithDescriptor.DesignTimeDescriptor>
                       <uc:CvDescriptor Id="8002d32e-17c5-4119-9bda-588b178e7ef9" TargetOffset="2, 50, 83, 19">
                         <uc:CvDescriptor.Anchors>
@@ -343,7 +349,7 @@
                       </uc:CvDescriptor>
                     </p:CvGetTextWithDescriptor.DesignTimeDescriptor>
                   </p:CvGetTextWithDescriptor>
-                  <If sap2010:Annotation.AnnotationText="THIS is the path to next workflow.&#xA;&#xA;If game is complete, we are starting the clicking sequence and email sending sequence." Condition="[CurrentGameState=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="510,1147" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If sap2010:Annotation.AnnotationText="THIS is the path to next workflow.&#xA;&#xA;If game is complete, we are starting the clicking sequence and email sending sequence." Condition="[CurrentGameState=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="586,1530" sap2010:WorkflowViewState.IdRef="If_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -352,26 +358,53 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="476,553" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence sap:VirtualizedContainerService.HintSize="552,936" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:Boolean" Name="DataCaughtUp" />
+                        </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:Comment sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Since this is a completed game.&#xA;&#xA;Clicks into the game. &#xA;Grabs the game serial number. &#xA;Searches for it in Excel Database. &#xA;&#xA;If Data exists, &quot;ListCounting&quot;+1 and continue.&#xA;If not, EXPORT data to email and then &quot;ListCounting&quot;+1" />
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailExport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="EmailExport.xaml">
+                        <ui:Comment sap:VirtualizedContainerService.HintSize="510,190" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Since this is a completed game.&#xA;&#xA;Clicks into the game. &#xA;Grabs the game serial number. &#xA;Searches for it in Excel Database. &#xA;&#xA;If Data exists, &quot;ListCounting&quot;+1 and continue.&#xA;If not, EXPORT data to email and then &quot;ListCounting&quot;+1" />
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EmailExport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="EmailExport.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                            <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument" />
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="ArgCaughtUp">
+                              <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="DataCaughtUp" />
+                            </OutArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
-                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:Int32">[ListCounting]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:Int32">[ListCounting+1]</InArgument>
-                          </Assign.Value>
-                        </Assign>
+                        <If Condition="[DataCaughtUp=True]" sap:VirtualizedContainerService.HintSize="510,465" sap2010:WorkflowViewState.IdRef="If_2">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,113" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Break sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Break_1" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[ListCounting]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">[ListCounting+1]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </If.Else>
+                        </If>
                       </Sequence>
                     </If.Then>
                     <If.Else>
@@ -399,7 +432,7 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOWN" Descriptor="[&quot;Target: Button (176,112,142,43) OffsetPoint: (1,189)&quot; +&#xA;&quot;Anchor: Text 'Games' (215,125,63,17)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Click - Button" sap:VirtualizedContainerService.HintSize="510,185" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_10" InformativeScreenshot="c72d61a76d196c9bfbf4a6bcee1af7bc" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                  <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOWN" Descriptor="[&quot;Target: Button (176,112,142,43) OffsetPoint: (1,189)&quot; +&#xA;&quot;Anchor: Text 'Games' (215,125,63,17)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Click - Button" sap:VirtualizedContainerService.HintSize="586,185" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_10" InformativeScreenshot="c72d61a76d196c9bfbf4a6bcee1af7bc" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                     <p:CvClickWithDescriptor.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -433,7 +466,7 @@
                       </ui:Target>
                     </p:CvClickWithDescriptor.Target>
                   </p:CvClickWithDescriptor>
-                  <p:CvHoverWithDescriptor DelayScreenshotAfterScroll="{x:Null}" CursorMotionType="Smooth" Descriptor="[&quot;Target: Button (176,112,142,43) OffsetPoint: (0,35)&quot; +&#xA;&quot;Anchor: Text 'Games' (215,125,63,17)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Hover - Button" sap:VirtualizedContainerService.HintSize="510,137" HoverTime="3" sap2010:WorkflowViewState.IdRef="CvHoverWithDescriptor_8" InformativeScreenshot="e894be06c0ace259d4bafd7e9d0633d6" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                  <p:CvHoverWithDescriptor DelayScreenshotAfterScroll="{x:Null}" CursorMotionType="Smooth" Descriptor="[&quot;Target: Button (176,112,142,43) OffsetPoint: (0,35)&quot; +&#xA;&quot;Anchor: Text 'Games' (215,125,63,17)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Hover - Button" sap:VirtualizedContainerService.HintSize="586,137" HoverTime="3" sap2010:WorkflowViewState.IdRef="CvHoverWithDescriptor_8" InformativeScreenshot="e894be06c0ace259d4bafd7e9d0633d6" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                     <p:CvHoverWithDescriptor.DesignTimeDescriptor>
                       <uc:CvDescriptor Id="44e53892-12c1-42fa-adc0-983742531adb" TargetPointOffset="0, 36">
                         <uc:CvDescriptor.Anchors>
@@ -447,7 +480,7 @@
                       </uc:CvDescriptor>
                     </p:CvHoverWithDescriptor.DesignTimeDescriptor>
                   </p:CvHoverWithDescriptor>
-                  <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_UP" Descriptor="[&quot;Target: Button (176,112,142,43) OffsetPoint: (0,35)&quot; +&#xA;&quot;Anchor: Text 'Games' (215,125,63,17)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Click - Button" sap:VirtualizedContainerService.HintSize="510,185" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_11" InformativeScreenshot="c72d61a76d196c9bfbf4a6bcee1af7bc" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                  <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_UP" Descriptor="[&quot;Target: Button (176,112,142,43) OffsetPoint: (0,35)&quot; +&#xA;&quot;Anchor: Text 'Games' (215,125,63,17)&quot;]" DesignTimeCacheId="e6dd77c3-1d45-4c5b-a4ad-22e3c3999ef9" DesignTimeScaleFactor="1" DisplayName="CV Click - Button" sap:VirtualizedContainerService.HintSize="586,185" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_11" InformativeScreenshot="c72d61a76d196c9bfbf4a6bcee1af7bc" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
                     <p:CvClickWithDescriptor.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -481,10 +514,11 @@
                       </ui:Target>
                     </p:CvClickWithDescriptor.Target>
                   </p:CvClickWithDescriptor>
-                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="586,90" sap2010:WorkflowViewState.IdRef="Delay_4" />
                 </Sequence>
               </ui:InterruptibleWhile.Body>
             </ui:InterruptibleWhile>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="662,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Process Ended. Proceed to Email Attachment Extraction&quot;]" />
           </Sequence>
         </ActivityAction>
       </p:CVScope.Body>
