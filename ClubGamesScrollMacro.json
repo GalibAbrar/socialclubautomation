@@ -1,0 +1,130 @@
+{
+    "Acceleration": 1,
+    "CreationTime": "20240229T125634",
+    "DoNotShowWindowOnFinish": true,
+    "Events": [
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 1364,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 1422,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 1462,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 1522,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 1574,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 1651,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 2936,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 2952,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 2971,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 3000,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 4322,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 4385,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 4453,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 4510,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 4544,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        },
+        {
+            "Delta": 120,
+            "EventType": "MouseWheel",
+            "Timestamp": 4593,
+            "X": 78.5999984741211,
+            "Y": 68.93000030517578
+        }
+    ],
+    "LoopDuration": 0,
+    "LoopInterval": 0,
+    "LoopIterations": 1,
+    "LoopType": "TillLoopNumber",
+    "MacroSchemaVersion": 3,
+    "MergeConfigurations": [
+    ],
+    "RestartPlayer": false,
+    "RestartPlayerAfterMinutes": 60,
+    "Shortcut": "Shift + End",
+    "StopOnHomeScreen": false
+}

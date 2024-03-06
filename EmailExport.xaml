@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1012,6978</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1012,7569</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>EmailExport_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -119,19 +119,19 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="EmailExport" sap:VirtualizedContainerService.HintSize="936,6913" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="EmailExport" sap:VirtualizedContainerService.HintSize="936,7504" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="874,6802" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="874,7393" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="79368f77-3a27-4811-a4dd-202c4fc8ac4b" DisplayName="CV Screen Scope 'BlueStacksApp'" sap:VirtualizedContainerService.HintSize="812,6691" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+      <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="79368f77-3a27-4811-a4dd-202c4fc8ac4b" DisplayName="CV Screen Scope 'BlueStacksApp'" sap:VirtualizedContainerService.HintSize="812,7282" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
         <p:CVScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -176,6 +176,7 @@
                   </ui:Target>
                 </p:CvClickWithDescriptor.Target>
               </p:CvClickWithDescriptor>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="778,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Taking game number to check with pre-existing records..&quot;]" />
               <p:CvGetTextWithDescriptor DelayScreenshotAfterScroll="{x:Null}" Descriptor="[&quot;Target: Button (280,76,271,47) Offset: (91,147,154,27)&quot; +&#xA;&quot;Anchor: Text 'Hand History' (369,94,103,20)&quot;]" DesignTimeCacheId="c4d57484-224c-42b2-900f-8f9cc81dbba1" DesignTimeScaleFactor="1" DisplayName="CV Get Text - Button" sap:VirtualizedContainerService.HintSize="778,220" sap2010:WorkflowViewState.IdRef="CvGetTextWithDescriptor_1" InformativeScreenshot="8f2a0b4007a34c206f93f864fad25171" NumberOfScrolls="2" RefreshBefore="True" Result="[CurrentGame]" ScrollDirection="None" Version="V6">
                 <p:CvGetTextWithDescriptor.DesignTimeDescriptor>
                   <uc:CvDescriptor Id="4ee3234b-0c00-4805-b034-14edf06367f5" TargetOffset="91, 147, 154, 27">
@@ -206,25 +207,25 @@
                   <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                 </Assign.Value>
               </Assign>
-              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="778,5621" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="False">
+              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="778,6031" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="False">
                 <ueab:ExcelProcessScopeX.Body>
                   <ActivityAction x:TypeArguments="ui:IExcelProcess">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="744,5534" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="744,5944" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="682,5423" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ResizeWindow="None" WorkbookPath="GameHistoryDatabase.csv">
+                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="682,5833" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ResizeWindow="None" WorkbookPath="GameHistoryDatabase.csv">
                         <ueab:ExcelApplicationCard.Body>
                           <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="648,5154" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="648,5564" sap2010:WorkflowViewState.IdRef="Sequence_5">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="sd:DataTable" Name="dtGameCodes" />
                                 <Variable x:TypeArguments="x:Int32" Name="LastRow" />
@@ -243,19 +244,19 @@
                                   <InArgument x:TypeArguments="x:Int32">[Cint(dtGameCodes.rows.Count.ToString)]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtGameCodes]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,872" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtGameCodes]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,1101" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                                 <ui:ForEachRow.Body>
                                   <ActivityAction x:TypeArguments="sd:DataRow">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,686" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,915" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <If Condition="[CurrentRow(&quot;GameCode&quot;).tostring = CurrentGame.ToString]" sap:VirtualizedContainerService.HintSize="510,598" sap2010:WorkflowViewState.IdRef="If_1">
+                                      <If Condition="[CurrentRow(&quot;GameCode&quot;).tostring = CurrentGame.ToString]" sap:VirtualizedContainerService.HintSize="510,827" sap2010:WorkflowViewState.IdRef="If_1">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -277,17 +278,18 @@
                                                 <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Game already recorded in database&quot;]" />
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Game &quot;+CurrentGame.toString+&quot; already recorded in database&quot;]" />
                                             <ui:Break sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Break_1" />
                                           </Sequence>
                                         </If.Then>
                                         <If.Else>
-                                          <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                          <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;This game was not recorded previously. Starting collection..&quot;]" />
                                           </Sequence>
                                         </If.Else>
                                       </If>
@@ -295,9 +297,9 @@
                                   </ActivityAction>
                                 </ui:ForEachRow.Body>
                               </ui:ForEachRow>
-                              <If Condition="[BoolFlag=False]" sap:VirtualizedContainerService.HintSize="586,3800" sap2010:WorkflowViewState.IdRef="If_2">
+                              <If Condition="[BoolFlag=False]" sap:VirtualizedContainerService.HintSize="586,3981" sap2010:WorkflowViewState.IdRef="If_2">
                                 <If.Then>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="521,3223" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                  <Sequence sap:VirtualizedContainerService.HintSize="521,3404" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="ReceiverEmailAddress" />
                                       <Variable x:TypeArguments="x:Boolean" Name="ConfirmButtonReady" />
@@ -322,6 +324,7 @@
                                         </scg:List>
                                       </ui:MultipleAssign.AssignOperations>
                                     </ui:MultipleAssign>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Game records being emailed to &quot;+ReceiverEmailAddress.ToString]" />
                                     <Assign sap:VirtualizedContainerService.HintSize="479,82" sap2010:WorkflowViewState.IdRef="Assign_5">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[NewRow]</OutArgument>
