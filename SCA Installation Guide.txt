@@ -1,0 +1,38 @@
+============================================================================================================
+Step-By-Step Guidelines for Developer and Installation
+============================================================================================================
+SOCIAL CLUB AUTOMATION PROJECT
+============================================================================================================
+- Google chrome must have ESimSol logged in with SuperUser
+- Install UIPath Studio
+- Copy and Keep "SocialClubAutomation" project folder safely in any drive
+- Install BlueStacks
+- Install Gmail + Login to Google inside BlueStacks.
+- Ctrl+Shift+7 after opening game on BlueStacks (Opens Macro window)
+	* On top right, select import macro
+	* Find the automation project folder
+	* Select "ClubGamesScrollMacro.json" file to import
+	* Click to successfully import
+- Open "project.json" file inside project folder with UiPath studio community
+- We are using online orchestrator
+
+============================================================================================================
+
+Orchestrator Setup:
+- Login to cloud.uipath.com with robot account
+- Publish project from UiPath studio (No need to fillup release note/certification anything).
+- Open cloud.uipath.com
+- Go to Personal Workspace -> Processes
+- Click run beside "Social Club Automation"
+- To schedule per hour, go to Triggers on the same page. Add trigger. Change to "Hourly" and add number of runs
+
+One time setup for every bot account with a bot computer is needed. (Manage Permissions and Add Machine)
+
+
+============================================================================================================
+For any queries,
+Md Galib Abrar Talukder
+RPA Developer
+t.galibabrar@gmail.com
++8801756697776
+============================================================================================================
